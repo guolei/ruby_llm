@@ -4323,6 +4323,54 @@
     }
   },
   {
+    "id": "gemini-2.5-flash-lite-preview-09-2025",
+    "name": "Gemini 2.5 Flash Lite Preview",
+    "provider": "gemini",
+    "family": "gemini-2.5-flash",
+    "created_at": null,
+    "context_window": 1048576,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "image",
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.1,
+          "output_per_million": 0.4,
+          "cached_input_per_million": 0.025
+        }
+      },
+      "audio_tokens": {
+        "standard": {
+          "input_per_million": 0.3,
+          "cached_input_per_million": 0.125
+        }
+      }
+    },
+    "metadata": {
+      "version": "2.5-flash-lite-preview-09-2025",
+      "description": "Lightweight preview release (September 2025) of Gemini 2.5 Flash optimized for speed and efficiency",
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens",
+        "createCachedContent"
+      ]
+    }
+  },
+  {
     "id": "codestral-2411-rc5",
     "name": "Codestral",
     "provider": "mistral",
@@ -8274,9 +8322,9 @@
     "pricing": {
       "text_tokens": {
         "standard": {
-          "input_per_million": 1.25,
-          "output_per_million": 10.0,
-          "cached_input_per_million": 0.125
+          "input_per_million": 0.05,
+          "output_per_million": 0.4,
+          "cached_input_per_million": 0.005
         }
       }
     },
@@ -8313,9 +8361,9 @@
     "pricing": {
       "text_tokens": {
         "standard": {
-          "input_per_million": 1.25,
-          "output_per_million": 10.0,
-          "cached_input_per_million": 0.125
+          "input_per_million": 0.05,
+          "output_per_million": 0.4,
+          "cached_input_per_million": 0.005
         }
       }
     },
