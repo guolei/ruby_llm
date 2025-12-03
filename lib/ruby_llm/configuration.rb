@@ -23,8 +23,10 @@ module RubyLLM
                   :gpustack_api_base,
                   :gpustack_api_key,
                   :mistral_api_key,
-                  :brainpage_api_key,
-                  :brainpage_api_base,
+                  :brainpage_qwen_api_key,
+                  :brainpage_qwen_api_base,
+                  :brainpage_gemma_api_key,
+                  :brainpage_gemma_api_base,
                   # Default models
                   :default_model,
                   :default_embedding_model,
