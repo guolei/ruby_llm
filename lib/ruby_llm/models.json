@@ -31952,4 +31952,74 @@
       "publisher_model_template": "projects/{project}/locations/{location}/publishers/google/models/textembedding-gecko@003"
     }
   }
+,  {
+    "id": "qwen_4b",
+    "name": "Qwen 3 4B Instruct",
+    "provider": "qwen_runpod",
+    "family": "qwen",
+    "created_at": null,
+    "context_window": 32768,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.0,
+          "output_per_million": 0.0
+        }
+      }
+    },
+    "metadata": {
+      "cost_per_second": 0.000011,
+      "endpoint": "https://ohwre6j0tzya00-8889.proxy.runpod.net/v1/chat/completions",
+      "original_model": "Qwen/Qwen3-4B-Instruct-2507"
+    }
+  },
+  {
+    "id": "gemma_3_1b",
+    "name": "Gemma 3 1B Instruct",
+    "provider": "gemma_runpod",
+    "family": "gemma",
+    "created_at": null,
+    "context_window": 8192,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.0,
+          "output_per_million": 0.0
+        }
+      }
+    },
+    "metadata": {
+      "cost_per_second": 0.000006,
+      "endpoint": "https://ohwre6j0tzya00-8888.proxy.runpod.net/v1/chat/completions",
+      "original_model": "google/gemma-3-1b-it"
+    }
+  }
 ]
