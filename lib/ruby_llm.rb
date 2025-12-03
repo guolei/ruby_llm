@@ -22,7 +22,8 @@ loader.inflector.inflect(
   'gpustack' => 'GPUStack',
   'mistral' => 'Mistral',
   'vertexai' => 'VertexAI',
-  'brainpage_open_source' => 'BrainpageOpenSource',
+  'brainpage_qwen' => 'BrainpageQwen',
+  'brainpage_gemma' => 'BrainpageGemma',
   'pdf' => 'PDF',
   'UI' => 'UI'
 )
@@ -85,9 +86,10 @@ end
 
 RubyLLM::Provider.register :anthropic, RubyLLM::Providers::Anthropic
 RubyLLM::Provider.register :bedrock, RubyLLM::Providers::Bedrock
+RubyLLM::Provider.register :brainpage_gemma, RubyLLM::Providers::BrainpageGemma
+RubyLLM::Provider.register :brainpage_qwen, RubyLLM::Providers::BrainpageQwen
 RubyLLM::Provider.register :deepseek, RubyLLM::Providers::DeepSeek
 RubyLLM::Provider.register :gemini, RubyLLM::Providers::Gemini
-RubyLLM::Provider.register :brainpage_open_source, RubyLLM::Providers::BrainpageOpenSource
 RubyLLM::Provider.register :gpustack, RubyLLM::Providers::GPUStack
 RubyLLM::Provider.register :mistral, RubyLLM::Providers::Mistral
 RubyLLM::Provider.register :ollama, RubyLLM::Providers::Ollama
