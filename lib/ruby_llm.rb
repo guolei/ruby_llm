@@ -22,8 +22,7 @@ loader.inflector.inflect(
   'gpustack' => 'GPUStack',
   'mistral' => 'Mistral',
   'vertexai' => 'VertexAI',
-  'qwen_runpod' => 'QwenRunpod',
-  'gemma_runpod' => 'GemmaRunpod',
+  'brainpage_open_source' => 'BrainpageOpenSource',
   'pdf' => 'PDF',
   'UI' => 'UI'
 )
@@ -88,14 +87,13 @@ RubyLLM::Provider.register :anthropic, RubyLLM::Providers::Anthropic
 RubyLLM::Provider.register :bedrock, RubyLLM::Providers::Bedrock
 RubyLLM::Provider.register :deepseek, RubyLLM::Providers::DeepSeek
 RubyLLM::Provider.register :gemini, RubyLLM::Providers::Gemini
-RubyLLM::Provider.register :gemma_runpod, RubyLLM::Providers::GemmaRunpod
+RubyLLM::Provider.register :brainpage_open_source, RubyLLM::Providers::BrainpageOpenSource
 RubyLLM::Provider.register :gpustack, RubyLLM::Providers::GPUStack
 RubyLLM::Provider.register :mistral, RubyLLM::Providers::Mistral
 RubyLLM::Provider.register :ollama, RubyLLM::Providers::Ollama
 RubyLLM::Provider.register :openai, RubyLLM::Providers::OpenAI
 RubyLLM::Provider.register :openrouter, RubyLLM::Providers::OpenRouter
 RubyLLM::Provider.register :perplexity, RubyLLM::Providers::Perplexity
-RubyLLM::Provider.register :qwen_runpod, RubyLLM::Providers::QwenRunpod
 RubyLLM::Provider.register :vertexai, RubyLLM::Providers::VertexAI
 
 if defined?(Rails::Railtie)

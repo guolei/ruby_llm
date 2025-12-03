@@ -31955,7 +31955,7 @@
 ,  {
     "id": "qwen_4b",
     "name": "Qwen 3 4B Instruct",
-    "provider": "qwen_runpod",
+    "provider": "brainpage_open_source",
     "family": "qwen",
     "created_at": null,
     "context_window": 32768,
@@ -31990,7 +31990,7 @@
   {
     "id": "gemma_3_1b",
     "name": "Gemma 3 1B Instruct",
-    "provider": "gemma_runpod",
+    "provider": "brainpage_open_source",
     "family": "gemma",
     "created_at": null,
     "context_window": 8192,
