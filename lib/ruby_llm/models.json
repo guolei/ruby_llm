@@ -3686,6 +3686,72 @@
     }
   },
   {
+    "id": "gemini-3-flash-preview",
+    "name": "Gemini 3 Flash Preview",
+    "provider": "gemini",
+    "family": "gemini-3-flash",
+    "created_at": null,
+    "context_window": 1048576,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": "2025-01-01 00:00:00 UTC",
+    "modalities": {
+      "input": [
+        "audio",
+        "image",
+        "text",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "caching",
+      "code_execution",
+      "function_calling",
+      "search_grounding",
+      "streaming",
+      "structured_output",
+      "thinking",
+      "url_context"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.5,
+          "cached_input_per_million": 0.05,
+          "output_per_million": 3.0
+        },
+        "batch": {
+          "input_per_million": 0.25,
+          "output_per_million": 1.5
+        }
+      },
+      "audio_tokens": {
+        "standard": {
+          "input_per_million": 1.0,
+          "cached_input_per_million": 0.1
+        },
+        "batch": {
+          "input_per_million": 0.5
+        }
+      }
+    },
+    "metadata": {
+      "version": "3.0-flash-preview",
+      "description": "Our most intelligent model built for speed, combining frontier intelligence with superior search and grounding.",
+      "pricing_note": "Audio tokens are priced separately from text/image/video tokens. Context caching storage: $1.00 per million tokens per hour.",
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens",
+        "createCachedContent",
+        "batchGenerateContent"
+      ]
+    }
+  },
+  {
     "id": "gemini-embedding-001",
     "name": "Gemini Embedding 001",
     "provider": "gemini",
